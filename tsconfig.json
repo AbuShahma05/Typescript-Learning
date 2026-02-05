@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
+```
+
+**What this means** (you don't need to memorize this):
+- `outDir`: Compiled JavaScript goes to the `dist` folder
+- `rootDir`: Our TypeScript code lives in the `src` folder
+- `strict`: TypeScript will be extra careful and catch more mistakes
+- `include`: Only compile files in the `src` folder
+
+**Save the file** (Ctrl+S or Cmd+S).
+
+---
+
+## Create a .gitignore File
+
+We don't want to save `node_modules` to GitHub (it's huge and unnecessary).
+
+Create a new file called `.gitignore` in the root folder.
+
+### File: `.gitignore`
+```
+node_modules/
+dist/
+```
+
+**What this does**: Tells Git to ignore these folders when saving to GitHub.
+
+---
+
+## Your Final Folder Structure
+```
+typescript-learning/
+├── node_modules/          (ignored by Git)
+├── src/                   (our TypeScript code goes here)
+├── dist/                  (compiled JavaScript goes here)
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── tsconfig.json
