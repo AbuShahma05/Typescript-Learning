@@ -1,10 +1,19 @@
-function logMessage(message: string): void {
-  console.log("[LOG]:", message);
-}
+export class Logger {
+  private prefix: string;
 
-function logError(error: string): void {
-  console.log("[ERROR]:", error);
-}
+  constructor(prefix: string) {
+    this.prefix = prefix;
+  }
 
-logMessage("Application started");
-logError("Something went wrong!");
+  info(message: string): void {
+    console.log(`[${this.prefix}] INFO: ${message}`);
+  }
+
+  error(message: string): void {
+    console.log(`[${this.prefix}] ERROR: ${message}`);
+  }
+
+  warning(message: string): void {
+    console.log(`[${this.prefix}] WARNING: ${message}`);
+  }
+}
