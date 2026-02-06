@@ -1,4 +1,4 @@
-export class Employee {
+class Employee {
   protected name: string;
   protected id: string;
   protected salary: number;
@@ -18,7 +18,7 @@ export class Employee {
   }
 }
 
-export class Manager extends Employee {
+class Manager extends Employee {
   private teamSize: number;
 
   constructor(name: string, id: string, salary: number, teamSize: number) {
@@ -36,7 +36,7 @@ export class Manager extends Employee {
   }
 }
 
-export class Developer extends Employee {
+class Developer extends Employee {
   private programmingLanguage: string;
 
   constructor(name: string, id: string, salary: number, language: string) {
@@ -53,3 +53,15 @@ export class Developer extends Employee {
     return this.salary * 0.10;
   }
 }
+
+let manager = new Manager("Alice", "M001", 80000, 5);
+let developer = new Developer("Bob", "D001", 60000, "TypeScript");
+
+manager.getDetails();
+console.log(`Salary: $${manager.getSalary()}`);
+console.log(`Bonus: $${manager.getBonus()}`);
+console.log("---");
+
+developer.getDetails();
+console.log(`Salary: $${developer.getSalary()}`);
+console.log(`Bonus: $${developer.getBonus()}`);
