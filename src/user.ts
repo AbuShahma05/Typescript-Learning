@@ -14,13 +14,13 @@ function displayUser(user: User): void {
 let user1: User = {
   username: "alice123",
   email: "alice@example.com",
-  age: 28
+  age: 28,
 };
 
 let user2: User = {
   username: "bob456",
   email: "bob@example.com",
-  age: 32
+  age: 32,
 };
 
 displayUser(user1);

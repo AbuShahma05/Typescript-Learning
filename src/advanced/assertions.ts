@@ -13,14 +13,14 @@ console.log("Uppercase:", strUpper);
 // Real-world example: working with DOM
 function getElementValue(id: string): string {
   let element = document.getElementById(id);
-  
+
   // TypeScript knows element might be null
   // And doesn't know it's an input element
-  
+
   if (element) {
     return (element as HTMLInputElement).value;
   }
-  
+
   return "";
 }
 

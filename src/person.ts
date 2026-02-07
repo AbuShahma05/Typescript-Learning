@@ -5,12 +5,12 @@ interface Person {
 
 let alice: Person = {
   name: "Alice",
-  age: 25
+  age: 25,
 };
 
 let bob: Person = {
   name: "Bob",
-  age: 30
+  age: 30,
 };
 
 console.log(alice.name, "is", alice.age, "years old");

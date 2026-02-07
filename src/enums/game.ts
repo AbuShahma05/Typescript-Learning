@@ -2,14 +2,14 @@ enum GameState {
   MainMenu,
   Playing,
   Paused,
-  GameOver
+  GameOver,
 }
 
 enum PlayerAction {
   MoveUp = "MOVE_UP",
   MoveDown = "MOVE_DOWN",
   Jump = "JUMP",
-  Attack = "ATTACK"
+  Attack = "ATTACK",
 }
 
 class Game {

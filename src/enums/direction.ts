@@ -2,7 +2,7 @@ export enum Direction {
   North,
   East,
   South,
-  West
+  West,
 }
 
 function move(direction: Direction): void {

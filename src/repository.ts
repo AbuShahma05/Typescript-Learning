@@ -15,7 +15,7 @@ export class UserRepository implements Repository<User> {
   private users: User[] = [];
 
   getById(id: number): User | undefined {
-    return this.users.find(user => user.id === id);
+    return this.users.find((user) => user.id === id);
   }
 
   getAll(): User[] {
@@ -28,7 +28,7 @@ export class UserRepository implements Repository<User> {
   }
 
   delete(id: number): void {
-    this.users = this.users.filter(user => user.id !== id);
+    this.users = this.users.filter((user) => user.id !== id);
     console.log(`Deleted user with ID: ${id}`);
   }
 }

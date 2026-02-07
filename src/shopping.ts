@@ -7,16 +7,16 @@ interface CartItem {
 let cart: CartItem[] = [
   { product: "Laptop", price: 999, quantity: 1 },
   { product: "Mouse", price: 25, quantity: 2 },
-  { product: "Keyboard", price: 75, quantity: 1 }
+  { product: "Keyboard", price: 75, quantity: 1 },
 ];
 
 function calculateTotal(items: CartItem[]): number {
   let total = 0;
-  
+
   for (let item of items) {
     total += item.price * item.quantity;
   }
-  
+
   return total;
 }
 

@@ -5,8 +5,4 @@ export function printNumbers(numbers: readonly number[]): void {
   // numbers[0] = 999;   //  not allowed
 }
 
-export const names: ReadonlyArray<string> = [
-  "Alice",
-  "Bob",
-  "Charlie"
-];
+export const names: ReadonlyArray<string> = ["Alice", "Bob", "Charlie"];

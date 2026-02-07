@@ -14,15 +14,15 @@ let order1: Order = {
   customerName: "Alice",
   total: 299.99,
   status: "pending",
-  paymentMethod: "credit_card"
+  paymentMethod: "credit_card",
 };
 
 let order2: Order = {
   orderId: 1002,
   customerName: "Bob",
-  total: 149.50,
+  total: 149.5,
   status: "shipped",
-  paymentMethod: "paypal"
+  paymentMethod: "paypal",
 };
 
 function displayOrder(order: Order): void {

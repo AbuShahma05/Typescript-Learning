@@ -50,6 +50,6 @@ export class Developer extends Employee {
   }
 
   getBonus(): number {
-    return this.salary * 0.10;
+    return this.salary * 0.1;
   }
 }

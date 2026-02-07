@@ -6,5 +6,5 @@ function formatValue(value: string | number): string {
   }
 }
 
-console.log(formatValue("hello"));    // "HELLO"
-console.log(formatValue(3.14159));    // "3.14"
+console.log(formatValue("hello")); // "HELLO"
+console.log(formatValue(3.14159)); // "3.14"

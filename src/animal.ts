@@ -53,12 +53,12 @@ class Cat extends Animal {
 let dog = new Dog("Max", 3, "Golden Retriever");
 let cat = new Cat("Whiskers", 2, true);
 
-dog.describe();        // Inherited from Animal
-dog.makeSound();       // Overridden in Dog
-dog.fetch();          // Unique to Dog
+dog.describe(); // Inherited from Animal
+dog.makeSound(); // Overridden in Dog
+dog.fetch(); // Unique to Dog
 
 console.log("---");
 
-cat.describe();        // Inherited from Animal
-cat.makeSound();       // Overridden in Cat
-cat.scratch();        // Unique to Cat
+cat.describe(); // Inherited from Animal
+cat.makeSound(); // Overridden in Cat
+cat.scratch(); // Unique to Cat

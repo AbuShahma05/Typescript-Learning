@@ -1,9 +1,18 @@
 "use strict";
-function logMessage(message) {
-    console.log("[LOG]:", message);
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Logger = void 0;
+class Logger {
+  constructor(prefix) {
+    this.prefix = prefix;
+  }
+  info(message) {
+    console.log(`[${this.prefix}] INFO: ${message}`);
+  }
+  error(message) {
+    console.log(`[${this.prefix}] ERROR: ${message}`);
+  }
+  warning(message) {
+    console.log(`[${this.prefix}] WARNING: ${message}`);
+  }
 }
-function logError(error) {
-    console.log("[ERROR]:", error);
-}
-logMessage("Application started");
-logError("Something went wrong!");
+exports.Logger = Logger;

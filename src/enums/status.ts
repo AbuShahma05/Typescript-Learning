@@ -3,14 +3,14 @@ export enum OrderStatus {
   Processing = "PROCESSING",
   Shipped = "SHIPPED",
   Delivered = "DELIVERED",
-  Cancelled = "CANCELLED"
+  Cancelled = "CANCELLED",
 }
 
 export enum LogLevel {
   Info = "INFO",
   Warning = "WARNING",
   Error = "ERROR",
-  Debug = "DEBUG"
+  Debug = "DEBUG",
 }
 
 function processOrder(status: OrderStatus): void {

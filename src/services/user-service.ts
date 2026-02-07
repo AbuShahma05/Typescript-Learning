@@ -20,7 +20,7 @@ export class UserService {
       id: this.nextId++,
       username: username,
       email: email,
-      createdAt: new Date()
+      createdAt: new Date(),
     };
 
     this.users.push(user);
@@ -33,6 +33,6 @@ export class UserService {
   }
 
   getUserById(id: number): User | undefined {
-    return this.users.find(user => user.id === id);
+    return this.users.find((user) => user.id === id);
   }
 }

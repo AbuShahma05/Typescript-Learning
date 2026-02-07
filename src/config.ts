@@ -9,7 +9,7 @@ const config: Config = {
   appName: "MyApp",
   version: "1.0.0",
   apiUrl: "https://api.example.com",
-  port: 3000
+  port: 3000,
 };
 
 export default config;
